@@ -1,0 +1,183 @@
+﻿/* Tooltip container */
+.table-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.table-tooltip .tooltiptext {
+    visibility: hidden;
+    top: -5px;
+    left: 105%;
+    min-height: 75px;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.table-tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #999;
+    margin: 0px auto;
+}
+
+    .tg td {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 0px;
+        word-break: normal;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-color: #999;
+        color: #444;
+        background-color: #F7FDFA;
+    }
+
+    .tg th {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 0px;
+        overflow: hidden;
+        word-break: normal;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-color: #999;
+        color: #fff;
+        background-color: #26ADE4;
+        width: 200px
+    }
+
+    .tg .tg-0lax {
+        text-align: left;
+        vertical-align: top
+    }
+
+.tg-sort-header::-moz-selection {
+    background: 0 0
+}
+
+.tg-sort-header::selection {
+    background: 0 0
+}
+
+.tg-sort-header {
+    cursor: pointer
+}
+
+    .tg-sort-header:after {
+        content: '';
+        float: right;
+        margin-top: 7px;
+        border-width: 0 5px 5px;
+        border-style: solid;
+        border-color: #404040 transparent;
+        visibility: hidden
+    }
+
+    .tg-sort-header:hover:after {
+        visibility: visible
+    }
+
+.tg-sort-asc:after, .tg-sort-asc:hover:after, .tg-sort-desc:after {
+    visibility: visible;
+    opacity: .4
+}
+
+.tg-sort-desc:after {
+    border-bottom: none;
+    border-width: 5px 5px 0
+}
+
+.button-cyan {
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 75px
+}
+
+.button-green {
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 75px
+}
+
+.button-blue {
+    background-color: blue; /* blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 75px
+}
+
+.button-red {
+    background-color: red; /* red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 75px
+}
+
+.button-orange {
+    background-color: orange; /* orange */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 75px
+}
+
+.button-gray {
+    background-color: gray; /* gray */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 75px
+}
+
+label.button-green, label.button-red, label.button-cyan, label.button-gray, label.button-orange, label.button-blue {
+    box-sizing: content-box;
+}
+

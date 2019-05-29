@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="T:IO.Swagger.Attributes.ValidateModelStateAttribute">
+            <summary>
+            Model state validation attribute
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Attributes.ValidateModelStateAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Called before the action method is invoked
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:IO.Swagger.Models.ComparisionResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ComparisionResult.Environments">
+            <summary>
+            Gets or Sets Environments
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResult.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResult.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResult.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResult.Equals(IO.Swagger.Models.ComparisionResult)">
+            <summary>
+            Returns true if ComparisionResult instances are equal
+            </summary>
+            <param name="other">Instance of ComparisionResult to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResult.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Models.ComparisionResultEnvironment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ComparisionResultEnvironment.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ComparisionResultEnvironment.FromVersion">
+            <summary>
+            Gets or Sets FromVersion
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ComparisionResultEnvironment.ToVersion">
+            <summary>
+            Gets or Sets ToVersion
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResultEnvironment.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResultEnvironment.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResultEnvironment.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResultEnvironment.Equals(IO.Swagger.Models.ComparisionResultEnvironment)">
+            <summary>
+            Returns true if ComparisionResultEnvironment instances are equal
+            </summary>
+            <param name="other">Instance of ComparisionResultEnvironment to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResultEnvironment.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Models.ComparisionResults">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ComparisionResults.Results">
+            <summary>
+            Gets or Sets Results
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResults.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResults.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResults.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResults.Equals(IO.Swagger.Models.ComparisionResults)">
+            <summary>
+            Returns true if ComparisionResults instances are equal
+            </summary>
+            <param name="other">Instance of ComparisionResults to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ComparisionResults.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Models.ReleaseEnvironmentInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseEnvironmentInfo.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseEnvironmentInfo.Version">
+            <summary>
+            Gets or Sets Version
+            </summary>
+        </member>
+        <member name="T:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum">
+            <summary>
+            Gets or Sets Status
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.Undefined">
+            <summary>
+            Enum UndefinedEnum for  Undefined
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.NotStarted">
+            <summary>
+             NotStarted for NotStarted
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.InProgress">
+            <summary>
+             InProgress for InProgress
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.Succeeded">
+            <summary>
+             Succeeded for Succeeded
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.Canceled">
+            <summary>
+             Canceled for Canceled
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.Rejected">
+            <summary>
+             Rejected for Rejected
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.Queued">
+            <summary>
+             Queued for Queued
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.Scheduled">
+            <summary>
+             Scheduled for Scheduled
+            </summary>
+        </member>
+        <member name="F:IO.Swagger.Models.ReleaseEnvironmentInfo.StatusEnum.PartiallySucceeded">
+            <summary>
+             PartiallySucceeded for PartiallySucceeded
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseEnvironmentInfo.Status">
+            <summary>
+            Gets or Sets Status
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseEnvironmentInfo.Who">
+            <summary>
+            Gets or Sets Who
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseEnvironmentInfo.When">
+            <summary>
+            Gets or Sets When
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseEnvironmentInfo.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseEnvironmentInfo.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseEnvironmentInfo.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseEnvironmentInfo.Equals(IO.Swagger.Models.ReleaseEnvironmentInfo)">
+            <summary>
+            Returns true if ReleaseEnvironmentInfo instances are equal
+            </summary>
+            <param name="other">Instance of ReleaseEnvironmentInfo to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseEnvironmentInfo.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:IO.Swagger.Models.ReleaseInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseInfo.ProjectName">
+            <summary>
+            Gets or Sets ProjectName
+            </summary>
+        </member>
+        <member name="P:IO.Swagger.Models.ReleaseInfo.Environments">
+            <summary>
+            Gets or Sets Environments
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseInfo.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseInfo.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseInfo.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseInfo.Equals(IO.Swagger.Models.ReleaseInfo)">
+            <summary>
+            Returns true if ReleaseInfo instances are equal
+            </summary>
+            <param name="other">Instance of ReleaseInfo to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:IO.Swagger.Models.ReleaseInfo.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:Api.ReleaseController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.ReleaseController.Compare(System.String,System.String)">
+            <summary>
+            Takes from and to env then returns list of differences.
+            </summary>
+            <param name="environmentFrom"></param>
+            <param name="environmentTo"></param>
+            <response code="200">A list of comparision results</response>
+        </member>
+        <member name="M:Api.ReleaseController.DeployPost(System.String,System.String)">
+            <summary>
+            Deploys all or specified projects from one environment to another
+            </summary>
+            <param name="environmentFrom"></param>
+            <param name="environmentTo"></param>
+            <response code="200">Blah</response>
+        </member>
+        <member name="M:Api.ReleaseController.ReleaseNotes">
+            <summary>
+            Generates notes for all or specified projects from one env to another
+            </summary>
+            <response code="200">A markdown string</response>
+        </member>
+        <member name="M:Api.ReleaseController.Get(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Returns current version number, status, date and who deployed for all projects in all or just specified environment.
+            </summary>
+            <response code="200">A list of Release details</response>
+        </member>
+    </members>
+</doc>

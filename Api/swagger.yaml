@@ -1,0 +1,167 @@
+paths:
+  /compare:
+    get:
+      operationId: Compare
+      summary: Takes from and to env then returns list of differences.
+      responses:
+        '200':
+          description: A list of comparision results
+          schema:
+            x-oad-type: reference
+            $ref: '#/definitions/ComparisionResults'
+          x-oad-type: response
+      parameters:
+        - name: environmentFrom
+          in: path
+          required: true
+          type: string
+          x-oad-type: parameter
+        - name: environmentTo
+          in: path
+          required: true
+          type: string
+          x-oad-type: parameter
+    x-oad-type: operation
+  /deploy:
+    post:
+      summary: Deploys all or specified projects from one environment to another
+      responses:
+        '200':
+          description: Blah
+          schema:
+            x-oad-type: 'null'
+            type: 'null'
+          x-oad-type: response
+      parameters:
+        - name: environmentFrom
+          in: path
+          required: true
+          type: string
+          x-oad-type: parameter
+        - name: environment To
+          in: path
+          required: true
+          type: string
+          x-oad-type: parameter
+    x-oad-type: operation
+  /notes:
+    get:
+      operationId: ReleaseNotes
+      summary: Generates notes for all or specified projects from one env to another
+      responses:
+        '200':
+          description: A markdown string
+          schema:
+            x-oad-type: string
+            type: string
+          x-oad-type: response
+    x-oad-type: operation
+  /:
+    get:
+      summary: 'Returns current version number, status, date and who deployed for all projects in all or just specified environment.'
+      responses:
+        '200':
+          description: A list of Release details
+          schema:
+            x-oad-type: array
+            type: array
+            items:
+              x-oad-type: reference
+              $ref: '#/definitions/ReleaseInfo'
+          x-oad-type: response
+    x-oad-type: operation
+definitions:
+  ReleaseEnvironmentInfo:
+    x-oad-type: object
+    type: object
+    properties:
+      Name:
+        x-oad-type: string
+        type: string
+      Version:
+        x-oad-type: string
+        type: string
+      Status:
+        x-oad-type: string
+        type: string
+        enum:
+          - ' Undefined'
+          - NotStarted
+          - InProgress
+          - Succeeded
+          - Canceled
+          - Rejected
+          - Queued
+          - Scheduled
+          - PartiallySucceeded
+      Who:
+        x-oad-type: string
+        type: string
+      When:
+        x-oad-type: string
+        type: string
+  ReleaseInfo:
+    x-oad-type: object
+    type: object
+    properties:
+      ProjectName:
+        x-oad-type: string
+        type: string
+      Environments:
+        x-oad-type: array
+        type: array
+        items:
+          x-oad-type: reference
+          $ref: '#/definitions/ReleaseEnvironmentInfo'
+  ComparisionResults:
+    x-oad-type: object
+    type: object
+    properties:
+      Results:
+        x-oad-type: array
+        type: array
+        items:
+          x-oad-type: reference
+          $ref: '#/definitions/ComparisionResult'
+  ComparisionResult:
+    x-oad-type: object
+    type: object
+    title: ComparisionResult
+    properties:
+      Environments:
+        x-oad-type: array
+        type: array
+        items:
+          x-oad-type: reference
+          $ref: '#/definitions/ReleaseEnvironmentInfo'
+  ComparisionResultEnvironment:
+    x-oad-type: object
+    type: object
+    properties:
+      Name:
+        x-oad-type: string
+        type: string
+      FromVersion:
+        x-oad-type: string
+        type: string
+      ToVersion:
+        x-oad-type: string
+        type: string
+info:
+  title: Releases API
+  version: 1.0.0
+  description: |-
+    * View the Release status for a Dev Ops Team Project
+    * Compare Environments
+    * Trigger Releases of multiple Porjects to an Environment
+  contact:
+    name: Paul Nichols
+    email: pauljamesnichols@gmail.com
+basePath: /releases
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+swagger: '2.0'
